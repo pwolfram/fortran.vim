@@ -11,9 +11,9 @@
 " License:      Public domain
 " Version:      0.4
 " Last Change:  2011 May 25
-
 " Modified indentation rules are used if the Fortran source code is free
 " source form, else nothing is done
+
 if (b:fortran_fixed_source != 1)
 	setlocal indentexpr=SebuFortranGetFreeIndent()
 	setlocal indentkeys+==~subroutine,=~function,=~forall
